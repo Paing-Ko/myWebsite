@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Nova+Oval&family=Roboto&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Website</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="img/mylogo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <a href="#">
+                <img src="img/mylogo.PNG" alt="Paing Logo">
+            </a>
+        </div>
+        <div id="hamburger-menu" class="hamburger-menu">
+
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+
+        </div>
+        <div id="nav-links" class="nav-links">
+            <a href="#about">About</a>
+            <a href="#why">Why Web Dev?</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="accessibility-options">
+            <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+            <button id="color-blind-toggle" aria-label="Toggle color blind mode">🧑‍🦯</button>
+            <button id="font-size-toggle" aria-label="Toggle larger font size">A+</button>
+        </div>
+    </nav>
+
+
+
+    <section class="intro-section">
+        <div class="container">
+            <img src="img/pi-smile.jpg" alt="a picture of Paing smiling" class="intro_img">
+            <h1>Hello &#x1F44B;, I'm <br> <span id="myName">Paing Phyo Ko</span>
+            <span id="playAudioButton" role="button" aria-label="Play Greeting"
+                    style="cursor:pointer;">🔊</span></h1>
+            <audio id="greetingAudio" preload="none">
+                <source src="audio/hello.m4a" type="audio/mp4">
+                Your browser does not support the audio element.
+            </audio>
+            <p>a former medical doctor 👨‍⚕️ from Myanmar(Burma), a future developer👨‍💻 in making</p>
+            <p>Left hospital life for 0's & 1's| Eager to learn new
+                things| Love ☕, 🌲, sports, technology, DIY, maths & numbers<br>
+                #π #3.14 #version2.0 #debugged #readyforliftoff🚀</p>
+
+        </div>
+    </section>
+
+
+
+    <section id="about">
+        <!-- About me-->
+        <h2>Who Am I?</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.3430624620705!2d95.33254263683925!3d17.347217556527113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c08d0356f0811b%3A0xf29a936f0958c296!2z4YChLuGAkS7hgIAg4YCh4YCR4YCx4YCs4YCE4YC6!5e0!3m2!1sen!2suk!4v1687534556409!5m2!1sen!2suk"
+            width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>Former Medical Doctor from Myanmar(Burma)</p>
+        <span>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aliquam quisquam aliquid temporibus
+                excepturi
+                qui dolores atque, minus, odit blanditiis adipisci suscipit? Quasi beatae vitae aut corporis! Ea, cum
+                omnis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat illo dolorem nostrum repellendus
+                similique sint fugiat earum nesciunt veniam, expedita quod nobis illum molestias fuga inventore adipisci
+                consectetur officia culpa.
+
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum accusamus sunt similique ipsum est tempora
+                ratione sequi eius necessitatibus atque in deserunt, soluta repudiandae. Voluptatibus laudantium
+                molestiae aliquid enim neque.
+
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore quae corporis debitis nostrum, odio
+                aliquam, earum aliquid itaque dignissimos, quidem vero quisquam voluptatum optio asperiores magni quos
+                placeat vitae repudiandae!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum accusamus sunt similique ipsum est tempora
+                ratione sequi eius necessitatibus atque in deserunt, soluta repudiandae. Voluptatibus laudantium
+                molestiae aliquid enim neque.
+
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore quae corporis debitis nostrum, odio
+                aliquam, earum aliquid itaque dignissimos, quidem vero quisquam voluptatum optio asperiores magni quos
+                placeat vitae repudiandae!
+
+
+            </p>
+        </span>
+      
+    </section>
+
+    <section id="why">
+        <!-- Explain why you want to move into web dev here -->
+        <h2>Why Web Dev?</h2>
+        <img src="img/google.jpeg" alt="paing infront of google UK" id="google">
+        <p>Career Change</p>
+
+
+        <span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet ac quam eget feugiat. Mauris
+                mauris
+                ipsum,
+                scelerisque nec odio eget, auctor iaculis nulla. Aliquam nec nisl nec odio sollicitudin laoreet sit amet
+                mattis nunc.
+                Mauris vulputate ipsum eu lacinia feugiat. Cras facilisis nulla nunc. Ut vel enim in eros efficitur
+                tristique in nec
+                est. Fusce laoreet porta tortor, et varius ligula volutpat a. Vivamus nisl tellus, mattis vel felis eu,
+                tempor faucibus
+                lorem. Nam at est condimentum, ultrices metus vitae, auctor urna. Cras fermentum eget risus at commodo.
+                Praesent et
+                condimentum sapien, et porttitor erat. Phasellus ante augue, iaculis nec libero ac, tempor semper diam.
+                Duis
+                porta,
+                felis sit amet euismod vestibulum, lectus nibh accumsan eros, accumsan dictum quam ex sit amet lectus.
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsum inventore rem dolorem deleniti
+                voluptas voluptatum tempore magni laboriosam voluptatem, aspernatur velit expedita corrupti, nihil
+                doloribus? Sint similique eaque in?
+            </p>
+
+        </span>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2>My Portfolio</h2>
+
+            <div class="learning">
+                <h3>Learning</h3>
+                <!-- List your learnings here -->
+                <ul>
+                    <li>Learning 1</li>
+                    <li>Learning 2</li>
+                    <li>Learning 3</li>
+                </ul>
+            </div>
+
+            <div class="projects">
+                <h3>Projects</h3>
+                <!-- List your projects here -->
+                <div class="project">
+                    <h4>Project Title</h4>
+                    <img src="path-to-image" alt="project image">
+                    <p>Short description of the project.</p>
+                    <a href="link-to-live-project" target="_blank">View Project</a>
+                </div>
+
+                <!-- Repeat for other projects -->
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="contact" id="contact">
+        <div class="contact-content">
+            <div class="connect">
+                <h1>Let's <br> Connect</h1>
+
+                <ul class="social-list">
+                    <li class="social-list__item">
+                        <a class="social-list__link" target="_blank" href="https://www.freecodecamp.org/Paing_Ko">
+                            <i class="fab fa-free-code-camp"></i>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a class="social-list__link" target="_blank"
+                            href="https://www.codewars.com/users/Paing-Phyo-Ko">
+                            <iconify-icon icon="simple-icons:codewars"></iconify-icon>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a class="social-list__link" target="_blank" href="https://github.com/Paing-Ko">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+
+
+                    <li class="social-list__item">
+                        <a class="social-list__link" target="_blank" href="https://www.instagram.com/doc2dev/">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a class="social-list__link" target="_blank" href="https://twitter.com/PaingPhyoKo">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a class="social-list__link" target="_blank" href="https://www.youtube.com/@paingpko">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="get-in-touch">
+                <h1>Get In Touch</h1>
+                <form id="contactForm" action="#">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+
+
+                    <label for="message">Type Your Message</label>
+                    <textarea class="message" id="message" name="message" placeholder="Hey, Paing..."
+                        required></textarea>
+
+                    <button id="submit" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+        <div>
+            <p class="copy">©PPK_2023</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" title="Go to top">⬆️</button>
+
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

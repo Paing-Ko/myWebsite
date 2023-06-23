@@ -1,0 +1,529 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --fs-h1: 2.25em;
+    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
+        0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: var(--fs-h1);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 70px;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.nav-links a {
+    margin-right: 5px;
+    /* Reduced margin to bring items closer */
+    padding: 5px 10px;
+    /* Adjusted padding */
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 10px 15px;
+    /* Adjusted padding for hover state */
+    transform: translateX(10px);
+}
+
+.accessibility-options button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin: 1px;
+}
+
+
+.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p {
+    color: #f4f4f4;
+}
+
+.dark-mode a {
+    color: #a4a4a4;
+}
+
+.dark-mode .intro-section,
+.dark-mode .contact,
+.dark-mode #portfolio {
+    background-color: #444;
+}
+
+.dark-mode .intro-section p {
+    color: #f4f4f4;
+    /* Set this to a lighter color so that it contrasts with the background */
+}
+
+.dark-mode .copy {
+    color: black;
+}
+
+/* Other elements and custom styles for dark mode */
+.dark-mode nav {
+    background-color: #444;
+}
+
+.dark-mode .nav-links a,
+.dark-mode .bar {
+    color: #f4f4f4;
+}
+
+
+.color-blind-mode {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.color-blind-mode a {
+    color: #0000ff;
+    /* Using a pure blue for links, which is often distinguishable */
+}
+
+.color-blind-mode nav,
+.color-blind-mode .bar {
+    background-color: #222;
+}
+
+.color-blind-mode .intro-section {
+    background-color: #ddd;
+    /* Using a lighter background for contrast */
+}
+
+.color-blind-mode button,
+.color-blind-mode input[type="submit"] {
+    background-color: #555;
+    color: #fff;
+    border: 2px solid #000;
+}
+
+.color-blind-mode .contact {
+    background-color: #444;
+    color: #eee;
+}
+
+/* And so on for other elements and components */
+
+.larger-font {
+    font-size: 120%;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    margin: 4px 0;
+    background-color: #333;
+}
+
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #f4f4f4;
+    }
+
+    #nav-links a {
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .accessibility-options {
+        display: none;
+    }
+}
+
+.intro-section {
+    padding: 50px 0;
+    background-color: #f3f3f3;
+    color: black;
+    text-align: center;
+    padding: 5px;
+}
+
+.intro-section p {
+    color: #222;
+    font-weight: 700;
+    word-spacing: 7px;
+    text-align: center;
+    padding: 15px;
+    margin: 15px auto;
+}
+
+.intro_img {
+    margin-top: 100px;
+    width: 400px;
+    height: 400px;
+    border-radius: 0px 50px 0px 50px;
+    box-shadow: var(--bs);
+}
+
+.colorChange {
+    color: #3498db;
+    /* change this to the color you want */
+    transition: color 1s ease, transform 2s ease;
+    transform: scale(1.1);
+    font-size: 1.1em;
+    /* this scales the text to 110% for a little zoom effect */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .intro_img {
+        width: 300px;
+        /* or any size that looks good on smaller screens */
+        height: 300px;
+        border-radius: 0px 50px 0px 50px;
+        box-shadow: var(--bs);
+    }
+}
+
+#about {
+
+    color: black;
+    text-align: left;
+    /* align text to center */
+    padding: 0 20px;
+    height: auto;
+    /* add 20px of padding to the left and right */
+
+
+}
+
+#about::before {
+    content: "";
+    display: block;
+    height: 70px;
+    /* Set this to the height of your nav bar */
+    margin-top: -70px;
+    /* Set this to the negative value of your nav bar height */
+    visibility: hidden;
+}
+
+#about h2,
+.span {
+    text-align: start;
+}
+
+
+#about span {
+    display: block;
+    text-align: justify;
+    display: block;
+    text-align: justify;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+    margin-left: 0;
+    /* Adjust this value to your preference */
+}
+
+#why {
+
+    color: black;
+    text-align: right;
+    /* align text to center */
+    padding: 0 20px;
+    height: auto;
+
+}
+
+#why::before {
+    content: "";
+    display: block;
+    height: 70px;
+    /* Set this to the height of your nav bar */
+    margin-top: -70px;
+    /* Set this to the negative value of your nav bar height */
+    visibility: hidden;
+}
+
+#google {
+    width: 30%;
+    border-radius: 15%;
+}
+
+#why>h2,
+.span {
+    text-align: end;
+}
+
+
+#why span {
+    display: block;
+    text-align: justify;
+    display: block;
+    text-align: justify;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+    margin-right: 0;
+
+    /* Adjust this value to your preference */
+}
+
+#portfolio {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#portfolio::before {
+    content: "";
+    display: block;
+    height: 70px;
+    /* Set this to the height of your nav bar */
+    margin-top: -70px;
+    /* Set this to the negative value of your nav bar height */
+    visibility: hidden;
+}
+
+#portfolio .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#portfolio h2 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+#portfolio .learning,
+#portfolio .projects {
+    margin-bottom: 30px;
+}
+
+#portfolio .project {
+    margin-bottom: 30px;
+}
+
+#portfolio .project img {
+    max-width: 100%;
+    height: auto;
+}
+
+#portfolio .project a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+#portfolio .project a:hover {
+    background-color: #2980b9;
+}
+
+.contact {
+    background-color: #000;
+    color: #fff;
+}
+
+.contact::before {
+    content: "";
+    display: block;
+    height: 70px;
+    /* Set this to the height of your nav bar */
+    margin-top: -70px;
+    /* Set this to the negative value of your nav bar height */
+    visibility: hidden;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    /* Adjust the max-width value as needed */
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+        /* Center the content */
+    }
+}
+
+.connect {
+    flex: 1;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Align items in the center */
+}
+
+.connect h1 {
+    text-align: start;
+    /* Center align the text in h1 */
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-size: 4em;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    /* Add some margin at the bottom of the h1 element */
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* Center the social icons */
+    margin-top: 30px;
+    padding: 0;
+}
+
+.social-list__item {
+    margin: 0 0.25em;
+}
+
+.social-list__link {
+    color: #fff;
+    font-size: 2em;
+    padding: 0.25em;
+    text-align: center;
+}
+
+.get-in-touch {
+    flex: 1;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.get-in-touch h1 {
+    align-self: center;
+    letter-spacing: 3px;
+    /* Keep the title aligned to the start */
+}
+
+.get-in-touch label,
+.get-in-touch input,
+.get-in-touch textarea {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+    min-width: 300px;
+    max-width: 500px;
+    min-height: 40px;
+    border-radius: 7px;
+}
+
+.get-in-touch textarea {
+    min-height: 200px;
+}
+
+#submit {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto 0;
+    transition: all 0.3s ease-in-out;
+
+    /* Smooth transition */
+}
+
+#submit:hover {
+    background-color: #2980b9;
+
+    /* Slightly increase font-size on hover */
+}
+
+footer {
+    background-color: #fff;
+    color: black;
+    padding: 15px 0px 15px 30px;
+    text-align: left;
+
+
+}
+
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
