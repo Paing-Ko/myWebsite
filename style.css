@@ -17,7 +17,7 @@ html {
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
-    line-height: 1.2;
+    line-height: 28px;
 }
 
 h1 {
@@ -52,7 +52,9 @@ nav {
     padding: 5px 10px;
     /* Adjusted padding */
     text-decoration: none;
-    color: #333;
+    color: black;
+    /* color of the links */
+    font-weight: bold;
     text-align: center;
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, padding 0.3s ease-in-out;
 }
@@ -79,12 +81,17 @@ nav {
     color: #f4f4f4;
 }
 
+.dark-mode #myName {
+    color: #17a0fc;
+}
+
 .dark-mode h1,
 .dark-mode h2,
 .dark-mode h3,
 .dark-mode p {
     color: #f4f4f4;
 }
+
 
 .dark-mode a {
     color: #a4a4a4;
@@ -102,8 +109,9 @@ nav {
 }
 
 .dark-mode .copy {
-    color: black;
+    color: white;
 }
+
 
 /* Other elements and custom styles for dark mode */
 .dark-mode nav {
@@ -115,6 +123,9 @@ nav {
     color: #f4f4f4;
 }
 
+.dark-mode .fun {
+    color: rgb(255, 255, 255);
+}
 
 .color-blind-mode {
     background-color: #f0f0f0;
@@ -220,13 +231,20 @@ nav {
     box-shadow: var(--bs);
 }
 
+#hello {
+    font-size: 30px;
+    
+}
+
+#myName {
+    font-size: 3.5rem;
+}
+
 .colorChange {
-    color: #3498db;
-    /* change this to the color you want */
+    color: #17a0fc;
     transition: color 1s ease, transform 2s ease;
     transform: scale(1.1);
-    font-size: 1.1em;
-    /* this scales the text to 110% for a little zoom effect */
+    font-weight: 900;
 }
 
 /* Media query for smaller screens */
@@ -279,6 +297,7 @@ nav {
     margin-left: 0;
     /* Adjust this value to your preference */
 }
+
 
 #why {
 
@@ -351,12 +370,17 @@ nav {
     font-size: 2.5em;
 }
 
+#portfolio ul {
+    list-style: none;
+}
+
 #portfolio .learning,
 #portfolio .projects {
     margin-bottom: 30px;
 }
 
 #portfolio .project {
+    display: grid;
     margin-bottom: 30px;
 }
 
@@ -429,6 +453,7 @@ nav {
     font-size: 4em;
     font-weight: bolder;
     letter-spacing: 5px;
+    line-height: 100px ;
     /* Add some margin at the bottom of the h1 element */
 }
 
@@ -503,9 +528,14 @@ nav {
     /* Slightly increase font-size on hover */
 }
 
+.line {
+    height: 1px;
+    background-color: white;
+}
+
 footer {
-    background-color: #fff;
-    color: black;
+    background-color: black;
+    color: white;
     padding: 15px 0px 15px 30px;
     text-align: left;
 

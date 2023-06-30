@@ -29,16 +29,16 @@ document
   });
 
 window.addEventListener("scroll", function () {
-  var nameElement = document.getElementById("myName");
-  var scrollPosition = window.scrollY;
+  const myNameElement = document.getElementById("myName");
 
-  if (scrollPosition > 50) {
-    // Change 50 to the amount of scrolling down you want to trigger the color change
-    nameElement.classList.add("colorChange");
+  // You can set a scroll threshold if you want.
+  if (window.scrollY > 50) {
+    myNameElement.classList.add("colorChange");
   } else {
-    nameElement.classList.remove("colorChange");
+    myNameElement.classList.remove("colorChange");
   }
 });
+
 
 document
   .getElementById("playAudioButton")
@@ -46,6 +46,9 @@ document
     var audio = document.getElementById("greetingAudio");
     audio.play();
   });
+
+
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -68,3 +71,6 @@ document.addEventListener("DOMContentLoaded", function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 });
+
+
+
