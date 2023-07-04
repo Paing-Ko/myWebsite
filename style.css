@@ -60,7 +60,7 @@ nav {
 }
 
 .nav-links a:hover {
-    background-color: #eee;
+    background-color: #eeeeeec2;
     border-radius: 5px;
     padding: 10px 15px;
     /* Adjusted padding for hover state */
@@ -81,6 +81,10 @@ nav {
     color: #f4f4f4;
 }
 
+
+
+
+
 .dark-mode #myName {
     color: #17a0fc;
 }
@@ -94,7 +98,7 @@ nav {
 
 
 .dark-mode a {
-    color: #a4a4a4;
+    color: #93a2aadc;
 }
 
 .dark-mode .intro-section,
@@ -132,14 +136,21 @@ nav {
     color: #333;
 }
 
+
 .color-blind-mode a {
     color: #0000ff;
-    /* Using a pure blue for links, which is often distinguishable */
+    text-decoration: underline;
+    /* Add underline to links for clarity */
 }
 
-.color-blind-mode nav,
 .color-blind-mode .bar {
     background-color: #222;
+}
+
+.color-blind-mode nav {
+    background-color: #585858;
+    color: #ffffff;
+    /* Make nav text white for contrast */
 }
 
 .color-blind-mode .intro-section {
@@ -149,14 +160,39 @@ nav {
 
 .color-blind-mode button,
 .color-blind-mode input[type="submit"] {
-    background-color: #555;
-    color: #fff;
-    border: 2px solid #000;
+    background-color: #888888;
+    color: #ffffff;
+    border: 3px solid #000;
+    /* A thicker border for better visibility */
 }
+
+/* Adjust focus styles for better visibility */
+.color-blind-mode a:focus,
+.color-blind-mode button:focus,
+.color-blind-mode input:focus,
+.color-blind-mode textarea:focus {
+    outline: 3px solid #0000ff;
+    /* Blue outline */
+    outline-offset: 3px;
+}
+
 
 .color-blind-mode .contact {
     background-color: #444;
     color: #eee;
+}
+
+/* Alternative text for images */
+.alt-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 /* And so on for other elements and components */
