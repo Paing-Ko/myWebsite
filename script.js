@@ -4,7 +4,6 @@ document
     document.body.classList.toggle("dark-mode");
   });
 
-// You can add similar event listeners for color-blind-toggle and font-size-toggle
 document
   .getElementById("font-size-toggle")
   .addEventListener("click", function () {
@@ -31,14 +30,12 @@ document
 window.addEventListener("scroll", function () {
   const myNameElement = document.getElementById("myName");
 
-  // You can set a scroll threshold if you want.
   if (window.scrollY > 50) {
     myNameElement.classList.add("colorChange");
   } else {
     myNameElement.classList.remove("colorChange");
   }
 });
-
 
 document
   .getElementById("playAudioButton")
@@ -47,14 +44,9 @@ document
     audio.play();
   });
 
-
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
   var backToTopButton = document.getElementById("back-to-top");
 
-  // When the user scrolls down 20px from the top, show the button
   window.addEventListener("scroll", function () {
     if (
       document.body.scrollTop > 20 ||
@@ -66,11 +58,54 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // When the user clicks on the button, scroll to the top of the document
+ 
   backToTopButton.addEventListener("click", function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 });
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  let index = 0;
+  const slides = document.querySelector(".slides");
+  const slideWidth = document.querySelector(".carousel").clientWidth;
 
+  const slide = () => {
+    index++;
+    if (index === slides.children.length / 2) {
+      slides.style.transition = "none"; // Disable transition
+      slides.style.transform = "translateX(0)"; // Reset position
+      index = 0; // Reset index
+      // Re-enable transition for normal slide movement
+      setTimeout(() => {
+        slides.style.transition = "all 0.5s ease";
+      }, 50);
+      // Skip this slide interval so it doesn't slide immediately
+      return;
+    }
+    slides.style.transition = "all 0.5s ease"; // Enable transition
+    slides.style.transform = `translateX(${-slideWidth * index}px)`; // Shift slides
+  };
+
+  setInterval(slide, 3000); // Change slide every 2 seconds
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  var toggleButton = document.getElementById("toggleButton");
+  var hiddenParagraphs = document.querySelectorAll(".text-container2 .hide");
+
+  toggleButton.addEventListener("click", function () {
+    if (hiddenParagraphs[0].classList.contains("hide")) {
+      hiddenParagraphs.forEach(function (paragraph) {
+        paragraph.classList.remove("hide");
+      });
+      toggleButton.textContent = "Show Less";
+    } else {
+      hiddenParagraphs.forEach(function (paragraph) {
+        paragraph.classList.add("hide");
+      });
+      toggleButton.textContent = "Read More";
+    }
+  });
+});
