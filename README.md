@@ -1,6 +1,6 @@
 # My Personal Web Developer Showcase Website :rocket:
 
-![Website Preview](img/website-preview.png)
+![Website Preview](img/website-preview2.png)
 
 Hello, World! :wave: I'm **Paing Phyo Ko**, a medical doctor from Myanmar turning over a new leaf by diving into the fascinating world of web development. This repository contains my personal website, which I built as a part of my application for Founders And Coders.
 
