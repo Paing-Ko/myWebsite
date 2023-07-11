@@ -58,12 +58,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
- 
   backToTopButton.addEventListener("click", function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 });
-
 
 document.addEventListener("DOMContentLoaded", function () {
   let index = 0;
@@ -90,7 +88,6 @@ document.addEventListener("DOMContentLoaded", function () {
   setInterval(slide, 3000); // Change slide every 2 seconds
 });
 
-
 document.addEventListener("DOMContentLoaded", function () {
   var toggleButton = document.getElementById("toggleButton");
   var hiddenParagraphs = document.querySelectorAll(".text-container2 .hide");
@@ -108,4 +105,57 @@ document.addEventListener("DOMContentLoaded", function () {
       toggleButton.textContent = "Read More";
     }
   });
+});
+
+document.getElementById("getJoke").addEventListener("click", getJoke);
+
+function getJoke() {
+  fetch("https://icanhazdadjoke.com/", {
+    headers: {
+      Accept: "application/json",
+    },
+  })
+    .then((response) => response.json())
+    .then(
+      (data) => (document.getElementById("joke").innerText = `${data.joke} 😂`)
+    )
+    .catch((error) => console.error(error));
+}
+
+// Load an initial joke
+getJoke();
+
+
+
+document
+  .getElementById("getWeather")
+  .addEventListener("click", function getWeather() {
+    const city = document.getElementById("city").value;
+    fetch(
+      "http://api.openweathermap.org/data/2.5/weather?q=" +
+        city +
+        "&APPID=07762fc005a25e1ba052bb33aa8d12e5&units=metric"
+    )
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        document.getElementById("weatherContainer").innerHTML = `
+    <p>Temperature: ${data.main.temp}°C</p>
+    <p>Weather: ${data.weather[0].description}</p>
+  `;
+      })
+      .catch((error) => console.error("Error:", error));
+  });
+
+getWeather();
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    event.preventDefault(); // Prevent the default behavior of the Enter key
+    getWeather();
+  }
 });
