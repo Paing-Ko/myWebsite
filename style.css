@@ -133,16 +133,16 @@ nav {
 
 .dark-mode .text-container1 {
     background-color: #444;
-    /* or any dark color that you prefer */
+    /* or any dark color */
     color: #f4f4f4;
-    /* or any light color that you prefer */
+    /* or any light color */
 }
 
 .dark-mode .text-container2 {
     background-color: #444;
-    /* or any dark color that you prefer */
+    /* or any dark color */
     color: #f4f4f4;
-    /* or any light color that you prefer */
+    /* or any light color */
 }
 
 .color-blind-mode {
@@ -340,9 +340,9 @@ nav {
     content: "";
     display: block;
     height: 70px;
-    /* Set this to the height of your nav bar */
+    /* Set this to the height of nav bar */
     margin-top: -70px;
-    /* Set this to the negative value of your nav bar height */
+    /* Set this to the negative value of nav bar height */
     visibility: hidden;
 }
 
@@ -389,7 +389,7 @@ nav {
     content: '';
     position: absolute;
     top: 60px;
-    /* you can adjust this value */
+    /*can adjust this value */
     right: -30px;
     /* To have the arrow on the right side */
     border-top: 15px solid transparent;
@@ -528,9 +528,9 @@ nav {
 #google {
     margin-top: 0%;
     max-width: 85%;
-    /* adjust this value as per your requirement */
+    /* adjust this value as requirement */
     max-height: 80%;
-    /* adjust this value as per your requirement */
+    /* adjust this value as requirement */
     border-radius: 15%;
 }
 
@@ -553,7 +553,7 @@ nav {
 
 .pitch p::first-letter {
     font-size: 2em;
-    /* You can adjust this value */
+    /* adjust this value */
     font-weight: bold;
     /* Optional: Makes the first letter bold */
 }
@@ -602,9 +602,9 @@ nav {
     content: "";
     display: block;
     height: 70px;
-    /* Set this to the height of your nav bar */
+    /* Set this to the height of nav bar */
     margin-top: -70px;
-    /* Set this to the negative value of your nav bar height */
+    /* Set this to the negative value of nav bar height */
     visibility: hidden;
 }
 
@@ -631,7 +631,7 @@ nav {
     .project-grid,
     .learning-grid {
         grid-template-columns: 1fr 1fr;
-        /* this creates one column */
+        /* this creates two columns */
     }
 }
 
@@ -819,9 +819,9 @@ td a:hover {
     content: "";
     display: block;
     height: 70px;
-    /* Set this to the height of your nav bar */
+    /* Set this to the height of nav bar */
     margin-top: -70px;
-    /* Set this to the negative value of your nav bar height */
+    /* Set this to the negative value of nav bar height */
     visibility: hidden;
 }
 

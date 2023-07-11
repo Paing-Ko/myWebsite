@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
     slides.style.transform = `translateX(${-slideWidth * index}px)`; // Shift slides
   };
 
-  setInterval(slide, 3000); // Change slide every 2 seconds
+  setInterval(slide, 3000); // Change slide every 3 seconds
 });
 
 document.addEventListener("DOMContentLoaded", function () {
