@@ -612,16 +612,16 @@ nav {
     max-width: 100%;
     /* Changed from 1200px to 100% */
     margin: 0 auto;
-    padding: 15px;
+    padding: 35px;
     /* Remove padding */
 }
 
 .project-grid,
 .learning-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     /* this creates four equally wide columns */
-    gap: 20px;
+    gap: 50px;
     /* optional: adds some space between the columns */
 }
 
@@ -754,6 +754,7 @@ nav {
 .learnHeading,
 .proHeading {
     font-size: 2em;
+    text-decoration: underline ;
 }
 
 .learning-box {

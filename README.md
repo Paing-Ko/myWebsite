@@ -22,6 +22,7 @@ Hello, World! :wave: I'm **Paing Phyo Ko**, a medical doctor from Myanmar turnin
 - The website does not use any external libraries such as Bootstrap, React, or Jekyll themes.
 - It is simple, clean, and built from scratch.
 - There are dark mode, color-blind mode and lager font mode included for some users.
+- You can also listen to my Greeting audio by clicking the speaker emoji.
 
 ## :earth_africa: Hosting
 
