@@ -636,22 +636,51 @@ nav {
     /* Remove padding */
 }
 
-.project-grid,
-.learning-grid {
+.project-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* this creates four equally wide columns */
     gap: 50px;
-    /* optional: adds some space between the columns */
 }
+
+.project-grid-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+    /* 3 columns */
+}
+
+.project-grid-4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* 4 columns */
+}
+
+.project {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+
 
 /* Adjust the grid when the viewport is 800px or less */
 @media screen and (max-width: 800px) {
 
-    .project-grid,
-    .learning-grid {
-        grid-template-columns: 1fr 1fr;
+    .project-grid {
+        grid-template-columns: 1fr;
         /* this creates two columns */
+    }
+
+    #second-row {
+        display: none;
+    }
+}
+
+#toggle-button {
+    display: none;
+    /* Hide the button by default */
+}
+
+@media screen and (max-width: 800px) {
+    #toggle-button {
+        display: block;
+        /* Show the button on small screens */
     }
 }
 

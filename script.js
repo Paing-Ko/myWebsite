@@ -157,3 +157,32 @@ document.addEventListener("keydown", (event) => {
     getWeather(); // Call the function when the Enter key is pressed
   }
 });
+
+
+
+document.getElementById("toggle-button").addEventListener("click", function () {
+  var secondRow = document.getElementById("second-row");
+  var button = document.getElementById("toggle-button");
+
+  if (secondRow.style.display === "none") {
+    secondRow.style.display = "block";
+    button.innerText = "Show Less"; // Change button text
+  } else {
+    secondRow.style.display = "none";
+    button.innerText = "See More"; // Change button text
+  }
+});
+
+
+document.getElementById("table-toggle").addEventListener("click", function () {
+  var coursesTable = document.getElementById("courses-table");
+  var button = document.getElementById("table-toggle");
+
+  if (coursesTable.style.display === "none") {
+    coursesTable.style.display = "block";
+    button.innerText = "Hide"; // Change button text
+  } else {
+    coursesTable.style.display = "none";
+    button.innerText = "See Courses"; // Change button text
+  }
+});

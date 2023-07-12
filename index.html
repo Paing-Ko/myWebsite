@@ -258,25 +258,9 @@
             <h2>My Portfolio</h2>
             <div class="projects">
                 <h3 class="proHeading">Projects</h3>
-                <div class="project-grid">
+
+                <div class="project-grid project-grid-3">
                     <!-- List your projects here -->
-
-                    <div class="weather-app">
-                        <h4>Weather App</h4>
-                        <input type="text" id="city" placeholder="Enter a city name">
-                        <button id="getWeather">Get Weather</button>
-                        <div id="weatherContainer"></div>
-
-                    </div>
-
-                    <div id="dadJokeContainer">
-                        <h4><span class="white-bg">Dad Joke🤣Generator</span></h4>
-                        <p id="joke"></p>
-                        <div id="btnContainer">
-                            <button id="getJoke">Get Joke</button>
-                        </div>
-                    </div>
-
                     <div class="project">
                         <h4>Virus Hunt</h4>
                         <img src="img/game-preview.png" alt="Virus Hunt Game">
@@ -284,13 +268,28 @@
 
 
                         <a href="https://paing-ko.github.io/myGame/intro.html" target="_blank">Play Game</a>
-
                     </div>
 
+                    
+                    <div id="dadJokeContainer">
+                        <h4><span class="white-bg">Dad Joke🤣Generator</span></h4>
+                        <p id="joke"></p>
+                        <div id="btnContainer">
+                            <button id="getJoke">Get Joke</button>
+                        </div>
+                    </div>
+                    
+                    <div class="weather-app" >
+                        <h4>Weather App</h4>
+                        <input type="text" id="city" placeholder="Enter a city name">
+                        <button id="getWeather">Get Weather</button>
+                        <div id="weatherContainer"></div>
+
+                    </div>
+</div>
 
 
-
-
+<div class="project-grid project-grid-4" id="second-row">
                     <div class="project">
                         <h4>Dilemma</h4>
 
@@ -316,22 +315,9 @@
                         <p>CS50W Wiki Project</p>
                         <a href="https://www.youtube.com/watch?v=NsVSIHE5eKs" target="_blank">View on Youtube</a>
                     </div>
-                    <!-- Repeat for other projects -->
 
-
-
-
-                    <div class="project">
-                        <h3 class="project-title">Cowsay and Pyttsx3 Project</h3>
-                        <img src="cowsay_pyttsx3.png" alt="A screenshot of the Cowsay and Pyttsx3 Project">
-                        <p class="project-description">
-                            This project combines the cowsay and pyttsx3 Python libraries to generate fun, speaking cow
-                            ASCII art.
-                        </p>
-                        <a href="link_to_your_project" class="project-link">View on GitHub</a>
-                    </div>
-
-
+</div>
+<button id="toggle-button">See More</button>
 
                 </div>
 
@@ -355,6 +341,7 @@
                     strengthen my understanding. I have been attending Code Reading Club meetups at Space4 regularly
                     because I think that would be beneficial for my code reading skill.
                 </p>
+                <div id="courses-table">
                 <table>
                     <tr>
                         <th>Course</th>
@@ -405,6 +392,10 @@
                     </tr>
 
                 </table>
+                </div>
+<button id="table-toggle">See Courses</button>
+
+
             </div>
 
         </div>
