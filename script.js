@@ -130,7 +130,7 @@ getJoke();
 function getWeather() {
   const city = document.getElementById("city").value;
   fetch(
-    "http://api.openweathermap.org/data/2.5/weather?q=" +
+    "https://api.openweathermap.org/data/2.5/weather?q=" +
       city +
       "&APPID=07762fc005a25e1ba052bb33aa8d12e5&units=metric"
   )

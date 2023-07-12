@@ -109,6 +109,10 @@ nav {
     /* Set this to a lighter color so that it contrasts with the background */
 }
 
+.dark-mode .intro_img {
+    border: 1px solid white;
+}
+
 .dark-mode .copy {
     color: white;
 }
@@ -143,6 +147,22 @@ nav {
     /* or any dark color */
     color: #f4f4f4;
     /* or any light color */
+}
+
+.dark-mode #google {
+    border: 2px solid white;
+}
+
+.dark-mode .learning p,
+.dark-mode .learning  a {
+    background-color: #444;
+    /* or any dark color */
+    color: #f4f4f4;
+    /* or any light color */
+}
+
+.dark-mode .learning a:hover {
+    color: #3498db;
 }
 
 .color-blind-mode {
@@ -664,7 +684,8 @@ nav {
     height: auto;
 }
 
-#portfolio .project a, #getJoke {
+#portfolio .project a,
+#getJoke {
     display: inline-block;
     padding: 10px 20px;
     background-color: #3498db;
@@ -673,7 +694,7 @@ nav {
     border-radius: 4px;
 }
 
-#portfolio .project a:hover{
+#portfolio .project a:hover {
     background-color: #2980b9;
 }
 
@@ -745,7 +766,7 @@ nav {
     padding: 20px;
     margin-bottom: 30px;
     border-radius: 4px;
-    
+
 }
 
 
@@ -754,7 +775,7 @@ nav {
 .learnHeading,
 .proHeading {
     font-size: 2em;
-    text-decoration: underline ;
+    text-decoration: underline;
 }
 
 .learning-box {
