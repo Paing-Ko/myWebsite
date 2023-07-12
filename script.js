@@ -180,7 +180,7 @@ document.getElementById("table-toggle").addEventListener("click", function () {
 
   if (coursesTable.style.display === "none") {
     coursesTable.style.display = "block";
-    button.innerText = "Hide"; // Change button text
+    button.innerText = "Hide Courses"; // Change button text
   } else {
     coursesTable.style.display = "none";
     button.innerText = "See Courses"; // Change button text
