@@ -22,7 +22,7 @@ document
 document
   .getElementById("hamburger-menu")
   .addEventListener("click", function () {
-    var navLinks = document.getElementById("nav-links");
+    let navLinks = document.getElementById("nav-links");
     if (navLinks.style.display === "block") {
       navLinks.style.display = "none";
     } else {
