@@ -217,7 +217,7 @@ nav {
 }
 
 /* Alternative text for images */
-.alt-text {
+/* .alt-text {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -227,7 +227,7 @@ nav {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
-}
+} */
 
 /* And so on for other elements and components */
 
