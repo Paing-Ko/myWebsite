@@ -45,13 +45,13 @@ window.addEventListener("scroll", function () {
 document
   .getElementById("playAudioButton")
   .addEventListener("click", function () {
-    var audio = document.getElementById("greetingAudio");
+    let audio = document.getElementById("greetingAudio");
     audio.play();
   });
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  var backToTopButton = document.getElementById("back-to-top");
+  let backToTopButton = document.getElementById("back-to-top");
 
   window.addEventListener("scroll", function () {
     if (
@@ -97,8 +97,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  var toggleButton = document.getElementById("toggleButton");
-  var hiddenParagraphs = document.querySelectorAll(".text-container2 .hide");
+  let toggleButton = document.getElementById("toggleButton");
+  let hiddenParagraphs = document.querySelectorAll(".text-container2 .hide");
 
   toggleButton.addEventListener("click", function () {
     if (hiddenParagraphs[0].classList.contains("hide")) {
@@ -170,8 +170,8 @@ document.addEventListener("keydown", (event) => {
 
 
 document.getElementById("toggle-button").addEventListener("click", function () {
-  var secondRow = document.getElementById("second-row");
-  var button = document.getElementById("toggle-button");
+  let secondRow = document.getElementById("second-row");
+  let button = document.getElementById("toggle-button");
 
   if (secondRow.style.display === "none") {
     secondRow.style.display = "block";
@@ -184,8 +184,8 @@ document.getElementById("toggle-button").addEventListener("click", function () {
 
 
 document.getElementById("table-toggle").addEventListener("click", function () {
-  var coursesTable = document.getElementById("courses-table");
-  var button = document.getElementById("table-toggle");
+let coursesTable = document.getElementById("courses-table");
+let button = document.getElementById("table-toggle");
 
   if (coursesTable.style.display === "none") {
     coursesTable.style.display = "block";
