@@ -4,17 +4,20 @@ document
     document.body.classList.toggle("dark-mode");
   });
 
+
 document
   .getElementById("font-size-toggle")
   .addEventListener("click", function () {
     document.body.classList.toggle("larger-font");
   });
 
+
 document
   .getElementById("color-blind-toggle")
   .addEventListener("click", function () {
     document.body.classList.toggle("color-blind-mode");
   });
+
 
 document
   .getElementById("hamburger-menu")
@@ -27,6 +30,7 @@ document
     }
   });
 
+
 window.addEventListener("scroll", function () {
   const myNameElement = document.getElementById("myName");
 
@@ -37,12 +41,14 @@ window.addEventListener("scroll", function () {
   }
 });
 
+
 document
   .getElementById("playAudioButton")
   .addEventListener("click", function () {
     var audio = document.getElementById("greetingAudio");
     audio.play();
   });
+
 
 document.addEventListener("DOMContentLoaded", function () {
   var backToTopButton = document.getElementById("back-to-top");
@@ -62,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
   let index = 0;
@@ -88,6 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
   setInterval(slide, 5000); // Change slide every 5 seconds
 });
 
+
 document.addEventListener("DOMContentLoaded", function () {
   var toggleButton = document.getElementById("toggleButton");
   var hiddenParagraphs = document.querySelectorAll(".text-container2 .hide");
@@ -106,6 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
 
 document.getElementById("getJoke").addEventListener("click", getJoke);
 
